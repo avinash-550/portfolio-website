@@ -1,21 +1,312 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- icons -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
-        <!-- favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.png?">
-        <!-- scrollrevealjs -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- typedjs -->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <title>Avinash's Portfolio</title>
-    </head>
-    <body>
-        Welcome to avinash Portfolio
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png?" type="image/x-icon">
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <title>Avinash's Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Avinash</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">HOME</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">PROJECTS</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">CONNECT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a href="assets/files/Resume.pdf" download>
+                    <button class="btn">Resume<i class="uil uil-file-download"></i></button>
+                </a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>PROFESSION</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>Software <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Dynamic and highly skilled software engineer with 2+ years of experience at Dell
+                            Technologies, excelling in the design and implementation of robust REST based microservices
+                            written in Java and C#. Proven track record of delivering high-quality,
+                            scalable solutions in fast-paced environments
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <a href="mailto:avinash.getmail@gmail.com">
+                            <button class="btn blue-btn">Email<i class="uil uil-envelope-alt"></i></button>
+                        </a>
+                        <a href="#about">
+                            <button class="btn">Know More<i class="uil uil-angle-down"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/images/photo.png" alt="avatar">
+                    </div>
+                </div>
+
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="section-intro-skills">
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-info">
+                                <h3><i class="uil uil-play-circle"></i> Introduction</h3>
+                                <p>👨‍💻Over the course of my career, I've successfully implemented solutions that
+                                    optimize
+                                    system functionality and improve overall efficiency. Proficient in Java, Spring
+                                    Boot,
+                                    and related technologies, experience in ASP.NET core development, I specialize in
+                                    crafting APIs that power dynamic applications with a focus on security, scalability,
+                                    maintainability and performance.
+                                    <br><br>
+                                    🚀 Over the course of my career, I've successfully implemented solutions that
+                                    optimize system functionality and improve overall efficiency. Proficient in Java,
+                                    Spring Boot, and related technologies, experience in ASP.NET core (C#) development,
+                                    I specialize in crafting APIs that power dynamic applications with a focus on
+                                    security, scalability, maintainability and performance.
+                                    <br><br>
+                                    📈 A results-driven professional, I take pride in my ability to collaborate with
+                                    cross-functional teams to deliver high-quality software solutions. Whether it's
+                                    troubleshooting complex issues or optimizing code for performance, I'm always up for
+                                    a challenge.
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="skill-box-wrap">
+                                <div class="skills-box">
+                                    <div class="skills-header">
+                                        <h3>Programming Languages</h3>
+                                    </div>
+                                    <div class="skills-list">
+                                        <span>Java</span>
+                                        <span>C#</span>
+                                        <span>Python</span>
+                                        <span>Golang</span>
+                                        <span>C++</span>
+                                    </div>
+                                </div>
+                                <div class="skills-box">
+                                    <div class="skills-header">
+                                        <h3>Frontend Technologies</h3>
+                                    </div>
+                                    <div class="skills-list">
+                                        <span>Javascript</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                    </div>
+                                </div>
+                                <div class="skills-box">
+                                    <div class="skills-header">
+                                        <h3>Backend Technologies</h3>
+                                    </div>
+                                    <div class="skills-list">
+                                        <span>Spring Boot</span>
+                                        <span>ASP.NET</span>
+                                        <span>Spring Data JPA</span>
+                                        <span>Hibernate</span>
+                                        <span>Spring Security</span>
+                                        <span>JDBC</span>
+                                        <span>Apache Kafka</span>
+                                        <span>Kubernetes</span>
+                                    </div>
+                                </div>
+                                <div class="skills-box">
+                                    <div class="skills-header">
+                                        <h3>Databases</h3>
+                                    </div>
+                                    <div class="skills-list">
+                                        <span>MySQL</span>
+                                        <span>PostgreSQL</span>
+                                        <span>MongoDB</span>
+                                        <span>Cache</span>
+                                    </div>
+                                </div>
+                                <div class="skills-box">
+                                    <div class="skills-header">
+                                        <h3>DevOps
+                                        </h3>
+                                    </div>
+                                    <div class="skills-list">
+                                        <span>Docker</span>
+                                        <span>Jenkins</span>
+                                        <span>Maven</span>
+                                        <span>Git</span>
+                                        <span>Linux</span>
+                                    </div>
+                                </div>
+                                <div class="skills-box">
+                                    <div class="skills-header">
+                                        <h3>Soft Skills
+                                        </h3>
+                                    </div>
+                                    <div class="skills-list">
+                                        <span>Problem-solving</span>
+                                        <span>Agile Methodology</span>
+                                        <span>Communication</span>
+                                        <span>Collaboration</span>
+                                        <span>Analytical</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-folder"></i>
+                        <h3>
+                            Quickdir</h3>
+                        <label>Work Directory Automation Tool</label>
+                        <a target="_blank" href="https://github.com/avinash-550/Quickdir">
+                            <button class="btn card">Go to Project<i class="uil uil-external-link-alt"></i></button>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-robot"></i>
+                        <h3>AI Prompt Catalog</h3>
+                        <label>Spring App to Manage Prompts</label>
+                        <a target="_blank" href="https://github.com/avinash-550/ai-prompt-catalog">
+                            <button class="btn card">Go to Project<i class="uil uil-external-link-alt"></i></button>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-newspaper"></i>
+                        <h3>Latest News Api</h3>
+                        <label>Flask App to get latest news</label>
+                        <a target="_blank" href="https://github.com/avinash-550/current_news_api">
+                            <button class="btn card">Go to Project<i class="uil uil-external-link-alt"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Social Links</h1>
+                    <div class="top-header-span">
+                        <span>Open to connecting with fellow developers, tech enthusiasts, hiring managers and industry
+                            professionals. Let's
+                            discuss the latest in software development or explore potential collaboration
+                            opportunities.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a style="text-decoration: none;" target=_blank href="https://www.linkedin.com/in/avinash550/">
+                            <div class="contact-info linkedin">
+                                <h2><i class="uil uil-linkedin"></i>&emsp;Linkedin </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a style="text-decoration: none;" target=_blank href="https://github.com/avinash-550">
+                            <div class="contact-info github">
+                                <h2><i class="uil uil-github"></i>&emsp;Github </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a style="text-decoration: none;" target=_blank href="https://medium.com/@avinash550">
+                            <div class="contact-info medium">
+                                <h2><i class="uil uil-medium-m"></i>&emsp;Medium </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a style="text-decoration: none;" target=_blank href="https://leetcode.com/avinash550/">
+                            <div class="contact-info leetcode">
+                                <h2><i class="uil uil-brackets-curly"></i>&emsp;Leetcode </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="quote">
+                <p class=""><i>"Fall in Love with the Problem, Not the Solution."</i></p>
+                <p>Uri Levine</p>
+            </div>
+            <div class="top-footer">
+                <p>Avinash .</p>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;color: #4EA5D9;">Avinash</a> - All
+                    rights reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
